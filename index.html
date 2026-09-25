@@ -8,7 +8,10 @@
 </head>
 <body>
   <main class="app">
-    <h1>Todo</h1>
+    <header class="app-header">
+      <h1>Todo</h1>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Pink mode</button>
+    </header>
 
     <form id="todo-form" class="todo-form">
       <input
@@ -25,6 +28,11 @@
     <ul id="todo-list" class="todo-list"></ul>
 
     <p id="empty-state" class="empty-state">No tasks yet. Add one above.</p>
+
+    <footer id="todo-footer" class="todo-footer">
+      <span id="todo-count" aria-live="polite"></span>
+      <button id="clear-completed" class="clear-completed" type="button">Clear all</button>
+    </footer>
   </main>
 
   <script src="app.js"></script>
